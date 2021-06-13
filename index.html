@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Guess Game</title>
+</head>
+<body>
+    <div class="container">
+        <h1>GUESS THE NUMBER</h1>
+
+        <div class="instruction">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Set a range of number that you want to guess between.</li>
+                <p>example: range by default starts from 0 - 10. So the range is set to 10, if you wish to try different range you can toggle. </p>
+                <li>And just keep guessing until you get it.</li>
+                <li>Yup that's it, nothing too hard just a simple number guess game.</li>
+            </ol>
+
+            <div class="count">
+                <div id="counter">
+                    <div><a class="leftArrw arrw" id="leftArrw"></a></div>
+                    <div id="number"></div>
+                    <div><a class="rightArrw arrw" id="rightArrw"></a></div>
+                </div>
+                
+                <div class="interactBtn">
+                    <button type="submit"><a href="/game.html">START</a></button>
+                    <button type="reset" id="resetBtn">RESET</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>

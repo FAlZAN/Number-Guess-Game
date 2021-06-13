@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3))), url(/images/background.png) no-repeat center/cover;
+  background: linear-gradient(rgba(255, 255, 255, 0.3)), url(/images/background.png) no-repeat center/cover;
+  font-family: "Press Start 2P", cursive;
+  width: 100%;
+  height: 100vh;
+}
+
+.container h1 {
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 5vh;
+  padding: 5vh 0;
+}
+
+.container .instruction {
+  line-height: 40px;
+  width: 80%;
+  margin: auto;
+  font-weight: 700;
+}
+
+.container .instruction h2 {
+  text-align: center;
+}
+
+.container .instruction .count {
+  height: 29vh;
+  width: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 4vh auto;
+}
+
+.container .instruction .count #counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+  overflow: hidden;
+  height: 20vh;
+  width: 22vw;
+}
+
+.container .instruction .count #counter #number {
+  font-size: 100px;
+  margin: 0 20px;
+}
+
+.container .instruction .count #counter .arrw {
+  border-top: 40px solid transparent;
+  border-left: 40px solid #000;
+  border-left: 40px solid #000;
+  border-right: 40px solid transparent;
+  cursor: pointer;
+}
+
+.container .instruction .count #counter .leftArrw {
+  position: absolute;
+  top: 45%;
+  left: 2px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.container .instruction .count #counter .rightArrw {
+  position: absolute;
+  bottom: 45%;
+  right: 2px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.container .instruction .count .interactBtn button {
+  font-family: "Press Start 2P", cursive;
+  font-size: 25px;
+  background: none;
+  padding: 1vh 1vw;
+  border: none;
+  cursor: pointer;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    color: #000;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+@keyframes blink {
+  0% {
+    color: #000;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+.container .instruction .count .interactBtn button a {
+  text-decoration: none;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+.container #setCount {
+  font-family: "Press Start 2P", cursive;
+  border: none;
+  background: none;
+  width: 120px;
+  font-size: 50px;
+}
+
+.container-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3))), url(/images/background.png) no-repeat center/cover;
+  background: linear-gradient(rgba(255, 255, 255, 0.3)), url(/images/background.png) no-repeat center/cover;
+  font-family: "Press Start 2P", cursive;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container-2 #backBtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  padding: 5vh 0;
+  font-size: 40px;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    color: #000;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+.container-2 #backBtn a {
+  text-decoration: none;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+.container-2 #message {
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  margin-bottom: 3vh;
+}
+
+.container-2 h1 {
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 5vh;
+  padding: 5vh 0;
+}
+
+.container-2 .content {
+  width: 90%;
+  height: 66.5vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container-2 .content #guessNum {
+  font-size: 60px;
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-2 .content .keypad {
+  width: 30vw;
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container-2 .content .keypad span {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.container-2 .content button {
+  font-family: "Press Start 2P", cursive;
+  font-size: 25px;
+  background: none;
+  padding: 1vh 1vw;
+  border: none;
+  cursor: pointer;
+  -webkit-animation: blink 1s ease infinite;
+          animation: blink 1s ease infinite;
+}
+
+@keyframes blink {
+  0% {
+    color: #000;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #000;
+  }
+}
+/*# sourceMappingURL=main.css.map */
